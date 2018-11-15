@@ -1,1 +1,0 @@
-{{Html::skin('vendor.js')}}

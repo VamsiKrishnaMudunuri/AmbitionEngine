@@ -1,4 +1,0 @@
-<div class="social-company card {{isset($infinite_type) ? $infinite_type : 'infinite'}}" data-paging="{{$paging}}" data-is-slice-paging="{{isset($is_slice_paging) ? $is_slice_paging : false}}" data-url="{{$url}}" data-more-text ="{{isset($more_text) ? $more_text : ''}}" data-empty-text="{{$empty_text}}" data-ending-text="{{--$ending_text--}}">
-    @include('templates.widget.social_media.company.card', array('following' => $following, 'auth_member' => $auth_member,
-    'profile_member' => isset($profile_member) ? $profile_member : null , 'companies' => $companies, 'last_id' => isset($last_id) ? $last_id : '', ))
-</div>

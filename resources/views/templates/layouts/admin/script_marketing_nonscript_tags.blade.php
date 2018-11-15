@@ -1,5 +1,0 @@
-@if(Utility::isProductionEnvironment())
-    
-
-
-@endif

@@ -1,1 +1,0 @@
-@include('templates.member.profile.skill', array('bio' => $bio))

@@ -1,1 +1,0 @@
-@include('templates.member.company.website', array('bio' => $bio))
