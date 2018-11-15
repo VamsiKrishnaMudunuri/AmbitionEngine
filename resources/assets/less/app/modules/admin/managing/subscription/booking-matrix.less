@@ -1,0 +1,63 @@
+@import '../../../../../components/color.less';
+@import '../../../../../components/dimension.less';
+@import '../../../../../components/mixins.less';
+
+
+.booking-matrix{
+
+    tr{
+        &.package{
+            > th{
+                background-color: #f5f5f5;
+                padding: 10px 10px 10px 20px;
+            }
+        }
+        &.unit{
+            > th {
+                background-color: #f5f5f5;
+                padding: 10px 10px 10px 20px;
+            }
+        }
+        &.facilities{
+            > td{
+                padding: 0px 0px;
+                table{
+                    border: none;
+                    margin-bottom: 0px;
+                    tr{
+                        th, td{
+                            padding: 10px 10px;
+                            border: none;
+                            vertical-align: middle;
+
+                        }
+                        th{
+                            font-size: 14px;
+                        }
+                        td{
+                            font-size: 13px;
+                            border-top: 1px solid #ddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+
+
+@media (min-width: @ms-screen-sm-min) {
+
+}
+
+@media (min-width: @ms-screen-md-min) {
+
+}
+
+@media (min-width: @ms-screen-lg-min) {
+
+}

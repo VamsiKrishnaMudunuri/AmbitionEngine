@@ -1,0 +1,106 @@
+@import '../../../components/color.less';
+@import '../../../components/dimension.less';
+@import '../../../components/mixins.less';
+
+.social-company{
+  &.card {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    .ms-vendor-property(flex-flow, row wrap);
+    align-content: flex-start;
+    .ms-vendor-property(flex, 0);
+    > div[class*='col-'] {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      > div {
+        width: 100%;
+        &.section {
+          position: relative;
+          background-color: #ffffff;
+          padding: 15px 15px;
+          margin-bottom: 1em;
+          border-bottom: 3px solid #c2c2c2;
+          display: inherit;
+          .member {
+            width: 100%;
+            display: inherit;
+            flex-direction: column;
+            .top {
+              .ms-flex();
+              flex: 1;
+              .profile-photo {
+                margin-right: 10px;
+                .frame {
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 60px;
+                  overflow: hidden;
+                  a {
+                    position: relative;
+                    display: block;
+                    text-decoration: none;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                      width: auto;
+                      height: 100%;
+                      position: absolute;
+                      top: -9999px;
+                      bottom: -9999px;
+                      left: -9999px;
+                      right: -9999px;
+                      margin: auto;
+                    }
+                  }
+                }
+
+              }
+              .details {
+                font-size: 14px;
+                overflow: hidden;
+                .calc(width, ~'100% - 85px');
+                padding: 10px 0px;
+                word-wrap: break-word;
+                flex: 1;
+                a {
+                  color: inherit;
+                }
+                .name {
+                  font-weight: 600;
+                }
+                .headline{
+
+                }
+              }
+            }
+            .bottom {
+              .tools {
+
+                text-align: right;
+                a {
+                  margin-top: 15px;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: @ms-screen-md-min) {
+
+
+
+}
+
+@media (min-width: @ms-screen-lg-min) {
+
+}

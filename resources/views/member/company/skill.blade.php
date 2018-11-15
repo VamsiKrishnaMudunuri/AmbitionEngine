@@ -1,0 +1,1 @@
+@include('templates.member.company.skill', array('bio' => $bio))

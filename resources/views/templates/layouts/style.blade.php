@@ -1,0 +1,1 @@
+{{Html::skin('vendor.css')}}
