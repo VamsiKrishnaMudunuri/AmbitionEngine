@@ -1,0 +1,157 @@
+@import '../../../../components/color.less';
+@import '../../../../components/dimension.less';
+@import '../../../../components/mixins.less';
+
+html{
+  body {
+    &.layout-page {
+      > .nav-main {
+        > header {
+
+          > nav {
+
+          }
+        }
+        > .top-banner{
+          background-position: center 35%;
+        }
+        > .top-banner, > .bottom-banner{
+
+
+
+          > .layer{
+
+          }
+          > img{
+
+          }
+          > .message-box{
+
+            h2{
+
+            }
+            .box {
+
+              .inner {
+
+                > div {
+
+                }
+              }
+            }
+
+            a{
+
+              &:hover, &.active{
+
+              }
+            }
+
+          }
+        }
+        > .content {
+
+          .page-locations{
+            .location-tab-container {
+              .location-tab {
+                border-bottom: 1px solid #000;
+                font-size: 16px;
+                //text-align: center;
+
+                > li {
+                  //display: inline-block;
+
+                  > a{
+                    border-bottom: none;
+                    color: rgb(166, 166, 166);
+
+                    span {
+                      color: inherit;
+                    }
+
+                    &:hover {
+                      background-color: unset;
+                      border: none;
+                      border-bottom: 2px solid @ms-cms-green-color;
+                    }
+
+                    &:focus {
+                      background-color: unset;
+                    }
+                  }
+
+
+                }
+
+                > li.active {
+                  border-bottom: 2px solid @ms-cms-green-color;
+
+                  > a {
+                    border: none !important;
+                    color: @ms-cms-green-color !important;
+                  }
+
+                  > a:focus {
+                    border: none !important;
+                  }
+
+                  > a:hover {
+                    border: none;
+                  }
+                }
+
+              }
+              .location-content-link {
+                position: relative;
+                left: 0;
+                padding-left: 0;
+                text-align: center;
+
+                > li {
+                  display: inline-block;
+                  margin-right: 10px;
+                  //padding: 20px 1px;
+                  margin-top: 20px;
+
+                  a {
+                    color: #000;
+                    text-decoration: none;
+
+                    &:hover {
+                      color: @ms-main-theme-color;
+                    }
+                  }
+
+
+                  &.active {
+                    color: @ms-main-theme-color;
+
+                    a {
+                      color: inherit;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+        }
+        > footer {
+
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @ms-screen-sm-min) {
+
+}
+
+@media (min-width: @ms-screen-md-min) {
+
+}
+
+@media (min-width: @ms-screen-lg-min) {
+
+}

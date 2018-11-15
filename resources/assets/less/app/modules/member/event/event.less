@@ -1,0 +1,426 @@
+@import '../../../../components/color.less';
+@import '../../../../components/dimension.less';
+@import '../../../../components/mixins.less';
+
+
+.member-event-event{
+  .left-side-container {
+    background-color: #ffffff;
+    .left-side {
+      > .top {
+        > .profile-photo {
+          width: 100%;
+          height: 235px;
+          .frame {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            a {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              display: block;
+              text-decoration: none;
+              img {
+                display: block;
+                width: 100%;
+                height: auto;
+                min-height: 100%;
+                position: absolute;
+                top: -9999px;
+                bottom: -9999px;
+                left: -9999px;
+                right: -9999px;
+                margin: auto;
+              }
+            }
+          }
+
+        }
+      }
+      > .bottom {
+        padding: 20px 15px;
+        .activity {
+          display: flex;
+          justify-content: center;
+          a {
+            font-size: 16px;
+            padding: 12px 20px;
+            &:first-child {
+              margin-right: 10px;
+            }
+
+          }
+
+        }
+        .divider {
+          margin: 1.8em 0;
+          border-bottom: 2px solid #eaebec;
+        }
+        .figure {
+          font-size: 13px;
+          color: #9c9c9c;
+          margin-bottom: 15px;
+          a {
+            color: inherit;
+          }
+        }
+
+      }
+    }
+    .right-side {
+      padding: 10px 15px 20px 15px;
+      > .name {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        a {
+          color: inherit;
+        }
+        .category {
+          color: #9c9c9c;
+          font-size: 12px;
+          font-weight: 600;
+          text-align: left;
+          margin-top: -10px;
+          margin-left: 2px;
+        }
+      }
+
+      .time, .location {
+        .ms-flex();
+        font-size: 16px;
+        color: inherit;
+        .icon {
+          margin-top: 2px;
+          margin-right: 10px;
+          .fa {
+            font-size: 1.666666em;
+          }
+        }
+
+      }
+      .time {
+        margin-bottom: 10px;
+        .icon {
+
+        }
+        .text {
+
+        }
+      }
+      .location {
+        margin-bottom: 20px;
+        .icon {
+          margin-right: 15px;
+          margin-left: 3px;
+        }
+        .place {
+          align-self: center;
+          .first-layout {
+            .name {
+
+            }
+
+            .address {
+              color: #9c9c9c;
+              font-size: 14px;
+            }
+          }
+          .second-layout {
+            .address {
+
+            }
+          }
+
+        }
+
+      }
+      .description {
+        font-size: 16px;
+        margin-bottom: 20px;
+        .title {
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        .content {
+
+        }
+      }
+      .share {
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+          color: #9c9c9c;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .right-side-container{
+    .comment-box{
+
+    }
+
+    .tag-box{
+      width: 100%;
+      background-color: #ffffff;
+      margin-bottom: 1em;
+      border: 1px solid rgba(194, 194, 194, 0.75);
+      border-radius: 2px;
+      padding: 1.5em 1.5em 1.5em 1.5em;
+    }
+  }
+}
+
+
+
+@media (min-width: @ms-screen-sm-min) {
+
+  .member-event-event{
+
+    .left-side-container {
+      .right-side {
+        padding-left: 0px;
+
+      }
+    }
+  }
+
+
+}
+
+@media (min-width: @ms-screen-md-min) {
+
+  .member-event-event{
+
+    .left-side-container {
+      .left-side {
+        margin-left: -15px;
+        > .top {
+          > .profile-photo {
+
+            .frame {
+
+              a {
+
+                img {
+
+                }
+              }
+            }
+
+          }
+        }
+        > .bottom {
+
+          .activity {
+
+            a {
+
+
+            }
+
+          }
+          .divider {
+
+          }
+          .figure {
+
+            a {
+
+            }
+          }
+
+        }
+      }
+      .right-side {
+
+        > .name {
+
+          a {
+
+          }
+        }
+
+        .time, .location {
+          .ms-flex();
+
+          .icon {
+
+            .fa {
+
+            }
+          }
+
+        }
+        .time {
+
+          .icon {
+
+          }
+          .text {
+
+          }
+        }
+        .location {
+
+          .icon {
+
+          }
+          .place {
+            .first-layout {
+              .name {
+
+              }
+
+              .address {
+
+              }
+            }
+            .second-layout {
+              .address {
+
+              }
+            }
+
+          }
+
+        }
+        .description {
+
+          .title {
+
+          }
+          .content {
+
+          }
+        }
+        .share {
+          .title {
+
+          }
+        }
+      }
+    }
+
+  }
+
+
+}
+
+@media (min-width: @ms-screen-lg-min) {
+  .member-event-event{
+
+    .left-side-container {
+      .left-side {
+
+        > .top {
+          > .profile-photo {
+
+            .frame {
+
+              a {
+
+                img {
+
+                }
+              }
+            }
+
+          }
+        }
+        > .bottom {
+
+          .activity {
+
+            a {
+              padding: 12px 38px;
+
+            }
+
+          }
+          .divider {
+
+          }
+          .figure {
+
+            a {
+
+            }
+          }
+
+        }
+      }
+      .right-side {
+
+        > .name {
+
+          a {
+
+          }
+        }
+
+        .time, .location {
+          .ms-flex();
+
+          .icon {
+
+            .fa {
+
+            }
+          }
+
+        }
+        .time {
+
+          .icon {
+
+          }
+          .text {
+
+          }
+        }
+        .location {
+
+          .icon {
+
+          }
+          .place {
+            .first-layout {
+              .name {
+
+              }
+
+              .address {
+
+              }
+            }
+            .second-layout {
+              .address {
+
+              }
+            }
+
+          }
+
+        }
+        .description {
+
+          .title {
+
+          }
+          .content {
+
+          }
+        }
+        .share {
+          .title {
+
+          }
+        }
+      }
+    }
+
+  }
+}

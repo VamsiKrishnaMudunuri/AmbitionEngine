@@ -1,0 +1,73 @@
+@import '../../../../components/color.less';
+@import '../../../../components/dimension.less';
+@import '../../../../components/mixins.less';
+
+
+.member-notification-index {
+
+  .notification-container {
+    > div {
+      &.notification-feed {
+        background-color: #f4f4f4;
+        border-bottom: 1px solid #dddfe2;
+        a {
+          padding: 10px 10px;
+          display: block;
+          color: inherit;
+          .profile {
+            .ms-flex();
+            .profile-photo {
+              margin-right: 10px;
+              .frame {
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+                overflow: hidden;
+
+                .ms-fitHMImage();
+
+              }
+
+            }
+            .details {
+              overflow: hidden;
+              .calc(width, ~'100% - 74px');
+              .message {
+
+              }
+              .time {
+
+              }
+            }
+          }
+          &:hover {
+            color: inherit;
+            text-decoration: none;
+          }
+        }
+        &.read {
+          background-color: #ffffff;
+        }
+      }
+
+    }
+  }
+
+}
+
+
+@media (min-width: @ms-screen-sm-min) {
+
+
+
+}
+
+@media (min-width: @ms-screen-md-min) {
+
+}
+
+@media (min-width: @ms-screen-lg-min) {
+
+
+
+}

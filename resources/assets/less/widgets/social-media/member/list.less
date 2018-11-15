@@ -1,0 +1,120 @@
+@import '../../../components/color.less';
+@import '../../../components/dimension.less';
+@import '../../../components/mixins.less';
+
+.social-member{
+  &.list {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    .ms-vendor-property(flex-flow, row wrap);
+    align-content: flex-start;
+    .ms-vendor-property(flex, 0);
+    > div[class*='col-'] {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      > div {
+        width: 100%;
+        &.section {
+          position: relative;
+          padding: 15px 0px;
+          border-bottom: 1px solid #eaebec;
+          .member {
+            width: 100%;
+            .ms-flex();
+            flex: 1;
+            .profile-photo {
+              margin-right: 10px;
+              .frame {
+                width: 60px;
+                height: 60px;
+                border-radius: 60px;
+                overflow: hidden;
+                a {
+                  display: block;
+                  text-decoration: none;
+                  width: 100%;
+                  height: 100%;
+                  .ms-fitHMImage();
+                }
+              }
+
+            }
+            .details {
+              font-size: 12px;
+              overflow: hidden;
+              .calc(width, ~'100% - 70px - 120px');
+              padding-top: 0px;
+              padding-right: 10px;
+              align-self: center;
+              a {
+                color: inherit;
+              }
+              .name {
+                font-size: 14px;
+                font-weight: 600;
+              }
+              .username {
+                line-height: 8px;
+                font-weight: 600;
+                padding-bottom: 10px;
+              }
+              .company {
+                span {
+                  &:nth-child(1) {
+                    a {
+                      font-weight: 600;
+                      font-style: italic;
+                    }
+                  }
+                }
+              }
+
+            }
+            .tools{
+              text-align: right;
+              width: 110px;
+            }
+
+
+
+          }
+        }
+      }
+      &:first-child{
+        > div{
+          &.section{
+            padding-top: 0px;
+          }
+        }
+
+      }
+      &:last-child{
+        > div{
+          &.section{
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .infinite-item{
+
+        margin-bottom: 0px;
+
+    }
+  }
+
+}
+
+@media (min-width: @ms-screen-md-min) {
+
+
+
+}
+
+@media (min-width: @ms-screen-lg-min) {
+
+}

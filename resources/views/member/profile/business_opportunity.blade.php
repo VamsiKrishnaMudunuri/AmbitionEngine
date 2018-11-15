@@ -1,0 +1,1 @@
+@include('templates.member.profile.business_opportunity', array('bioBusinessOpportunity' => $bioBusinessOpportunity))

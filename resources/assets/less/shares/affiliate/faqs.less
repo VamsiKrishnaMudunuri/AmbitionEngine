@@ -1,0 +1,65 @@
+@import '../../components/color.less';
+@import '../../components/dimension.less';
+@import '../../components/mixins.less';
+
+html{
+  body {
+
+    > .nav-main {
+      > header {
+      }
+
+      > .content{
+
+        .faq-container {
+          .panel-group {
+            .panel {
+              border-radius: 0px;
+              margin-bottom: 0px;
+
+              .panel-heading {
+                background-color: #f6f6f6;
+              }
+
+              .panel-heading [data-toggle="collapse"]:after {
+                font: normal normal normal 14px/1 FontAwesome;
+                display: inline-block;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                content: "\f078"; /* "chevron" icon */
+                float: right;
+                font-size: 10px;
+                -webkit-transform: rotate(-180deg);
+                -moz-transform: rotate(-180deg);
+                -ms-transform: rotate(-180deg);
+                -o-transform: rotate(-180deg);
+                transform: rotate(-180deg);
+              }
+
+              .panel-heading [data-toggle="collapse"].collapsed:after {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                transform: rotate(360deg);
+                color: #454444;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @ms-screen-sm-min) {
+
+}
+
+@media (min-width: @ms-screen-md-min) {
+
+}
+
+@media (min-width: @ms-screen-lg-min) {
+
+}

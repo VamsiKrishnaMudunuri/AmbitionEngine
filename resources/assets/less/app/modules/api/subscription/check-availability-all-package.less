@@ -1,0 +1,62 @@
+@import '../../../../components/color.less';
+@import '../../../../components/dimension.less';
+@import '../../../../components/mixins.less';
+
+.api-subscription-check-availability-all-package{
+    table{
+        tr{
+
+            &.package{
+                cursor: pointer;
+                input[type=radio]{
+                    cursor: inherit;
+                }
+                &.inactive{
+                    background-color: #f5f5f5;
+                    cursor: not-allowed;
+                    input[type=radio]{
+                        cursor: inherit;
+                    }
+                }
+                &:hover{
+                    background-color: #f5f5f5;
+                }
+            }
+
+            td{
+
+                .name{
+                    input[type="radio"]{
+                        margin: -2px 0px 0px;
+                        vertical-align: middle;
+                    }
+                }
+                .price{
+                    white-space: nowrap;
+                }
+                .note{
+                    white-space: nowrap;
+                    font-size: 11px;
+                    color: #737373;
+
+                }
+
+            }
+
+
+
+        }
+    }
+}
+
+@media (min-width: @ms-screen-sm-min) {
+
+}
+
+@media (min-width: @ms-screen-md-min) {
+
+}
+
+@media (min-width: @ms-screen-lg-min) {
+
+}

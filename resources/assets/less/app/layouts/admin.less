@@ -1,0 +1,203 @@
+@import '../../components/color.less';
+@import '../../components/dimension.less';
+@import '../../components/mixins.less';
+
+html{
+  body {
+
+    &.layout-admin{
+      > .nav-main {
+        > header {
+
+          > nav {
+
+          }
+        }
+        > .content {
+          .tabs{
+            list-style: none;
+            margin: 0 0 20px;
+            padding: 0;
+            border-bottom: 1px solid #ddd;
+            white-space: nowrap; 
+            overflow-x: auto;
+            overflow-y: visible;
+            &.no-overflow{
+              overflow: visible;
+            }
+            > li{
+              display: inline-block;
+              margin-right: 15px;
+              > a{
+                color: #333;
+                padding: 5px 0 10px;
+                display: block;
+                letter-spacing: 1px;
+                position: relative;
+                text-decoration: none;
+                &:hover, &.active{
+                  &:after{
+                    content: "";
+                    height: 3px;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0px;
+                  }
+                }
+                &:hover{
+                  &:after{
+
+                    background-color: rgba(254, 205, 111, 0.6);
+
+                  }
+                }
+                &.active{
+                  font-weight: bold;
+                  &:after{
+                    background-color: rgba(254, 205, 111, 1);
+                  }
+
+                }
+              }
+            }
+          }
+          .company-profile-top{
+            position: relative;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 15px 30px;
+            &:after{
+              content:"";
+              display: table;
+              clear:both;
+            }
+            > h4:first-child{
+              font-size: 80%;
+              text-transform: uppercase;
+              color: #aaa;
+              letter-spacing: .2em;
+              margin: 0;
+            }
+            > a.btn-theme{
+              position: absolute;
+              right: 15px;
+              top: 30%;
+              display: block;
+              padding: 10px 15px;
+            }
+            > .profile-listing{
+              float: left;
+              width: 33.33%;
+              >label{
+                font-size: 80%;
+                text-transform: uppercase;
+                color: #aaa;
+                letter-spacing: .2em;
+                margin: 0;
+              }
+              >p{
+                margin: 0;
+                &:empty:after{
+                  content: "-";
+                }
+              }
+              &:nth-child(3){
+                width: 100%;
+                float: none;
+                >label{
+                  display: none;
+                }
+                p{
+                  font-size: 24px;
+                  font-weight: bold;
+                }
+              }
+              &:nth-child(4){
+                float: none;
+              }
+            }
+          }
+          .profile {
+              position: relative;
+              border-bottom: 1px solid #ddd;
+              padding: 20px 15px 30px;
+              > h4{
+                  font-size: 22px;
+                  font-weight: bold;
+              }
+              > .profile-listing{
+                  padding: 5px 0 10px;
+                  > label{
+                    font-size: 80%;
+                    text-transform: uppercase;
+                    color: #aaa;
+                    letter-spacing: .2em;
+                    margin: 0;
+                  }
+                  >p{
+                    margin: 0;
+                    &:empty:after{
+                      content: "-";
+                    }
+                  }
+              }
+           }
+          .box{
+              border: 1px solid #eee;
+              padding: 15px 30px;
+              margin-bottom: 30px;
+              > h3{
+                font-weight:bold;
+                display: inline-block;
+                margin: 8px 0 15px;
+              }
+            }
+        }
+        > footer {
+
+        }
+      }
+    }
+
+  }
+}
+
+.btn-white {
+  background-color: @ms-button-white-background-color;
+  color: @ms-button-white-color !important;
+  border-color: @ms-button-white-border-color;
+  font-weight: @ms-button-white-font-weight;
+  border-radius: @ms-button-white-border-radius;
+  &:hover {
+    background-color: @ms-button-white-hover-background-color !important;
+    color: @ms-button-white-hover-color !important;
+    border-color: @ms-button-white-hover-border-color !important;
+  }
+  &.active {
+    background-color: @ms-button-white-active-background-color !important;
+    color: @ms-button-white-active-color !important;
+    border-color: @ms-button-white-active-border-color !important;
+  }
+}
+
+@media only screen and (max-width:@ms-screen-sm-min){
+html{
+  body {
+
+    &.layout-admin{
+      > .nav-main {
+        > .content {
+          .tabs{
+
+          }
+          .company-profile-top{
+            > .profile-listing{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}

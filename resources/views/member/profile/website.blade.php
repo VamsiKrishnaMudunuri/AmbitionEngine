@@ -1,0 +1,1 @@
+@include('templates.member.profile.website', array('bio' => $bio))
