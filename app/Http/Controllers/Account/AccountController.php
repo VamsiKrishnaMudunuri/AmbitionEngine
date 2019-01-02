@@ -54,7 +54,6 @@ class AccountController extends Controller
                     Arr::get(User::$sandbox, 'image.cover'),
                     true
                 );
-
                 Sandbox::s3()->generateImageLinks(
                     ${$this->singular()},
                     'profileSandboxWithQuery',
@@ -62,7 +61,6 @@ class AccountController extends Controller
                     true
                 );
             }
-
         }catch(ModelNotFoundException $e){
 
             return Utility::httpExceptionHandler(404, $e);
